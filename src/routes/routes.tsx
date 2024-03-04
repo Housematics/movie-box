@@ -7,6 +7,7 @@ import Celebrity from "@/pages/app/celebrity/Celebrity";
 import Home from "@/pages/app/home/Home";
 import Movie from "@/pages/app/movie/Movie";
 import Movies from "@/pages/app/movies/Movies";
+import TrendingMovies from "@/pages/app/movies/TrendingMovies";
 import Profile from "@/pages/app/profile/Profile";
 import Saved from "@/pages/app/saved/Saved";
 
@@ -26,6 +27,10 @@ export const routes: RouteObject[] = [
         <Profile />
       </ProtectedRoute>
     ),
+  },
+  {
+    path: "/trending",
+    element: <TrendingMovies />,
   },
   {
     path: "/movies",
