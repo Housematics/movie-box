@@ -1,0 +1,72 @@
+/*====== Importing Fonts ======*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*====== Define vars ======*/
+:root {
+  /*=== Define Font Colors ===*/
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /*=== Define Font Sizes ===*/
+  --color-white: #fff;
+  --color-gray: #bdbdbd;
+  --color-dark-gray: #212121;
+  --color-black: #000;
+  --color-rose: #ff007f;
+  --color-red: #d32f2f;
+
+  /*=== Define Font Weights ===*/
+  --font-thin: 100;
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+
+  /*=== Define styles ===*/
+  --box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+/*====== Define Code Base ======*/
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
