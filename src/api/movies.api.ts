@@ -15,3 +15,9 @@ export const fetchById = async (type: Gender, id: number) =>
 
 export const fetchTrailers = async (type: Gender, id: number) =>
   axios.get(`/${type}/${id}/videos`);
+
+export const fetchCelebrities = async (filter: string) =>
+  axios.get(`/person/popular?${filter}`);
+
+export const fetchCelebrity = async (id: number, filter: string) =>
+  axios.get(`/person/popular/${id}?${filter}`);
