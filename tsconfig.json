@@ -24,7 +24,9 @@
       "@/*": ["./src/*"],
       "@routes/*": ["./src/routes/*"],
       "@context/*": ["./src/context/*"],
-      "@config/*": ["./src/config/*"]
+      "@config/*": ["./src/config/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   },
   "include": ["src"],
