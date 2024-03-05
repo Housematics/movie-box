@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 9999;
 }
 
 .header > a:first-child {
@@ -21,7 +22,7 @@
 }
 
 .header > a:first-child > h2 {
-  color: #000;
+  color: #fff;
   font-size: var(--text-xl);
   font-weight: 650;
 }
@@ -29,7 +30,7 @@
 .header > a:nth-child(3) {
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  color: #000 !important;
+  color: #fff !important;
   transition: 0.3s ease-in-out;
 }
 

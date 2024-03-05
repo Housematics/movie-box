@@ -1,10 +1,14 @@
 import React from "react";
 import Layout from "@components/Layout/Layout";
+import "./Home.css";
+import Showcase from "@/components/showcase/Showcase";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <Layout>
-      <section>Hey</section>
+      <section className="home" id="home">
+        <Showcase />
+      </section>
     </Layout>
   );
 };
