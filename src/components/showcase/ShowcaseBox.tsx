@@ -28,7 +28,7 @@ const ShowcaseBox: React.FC<Props> = ({ movie }) => {
         <div className="showcase-box-wrapepr-infos">
           <div>
             <img src={TmdbLogo} alt="tmdb-logo" />
-            <p>{movie.vote_average}/10</p>
+            <p>{movie.vote_average.toFixed(2)}/10</p>
           </div>
           <div>
             <img src={Apple} alt="apple-logo" />

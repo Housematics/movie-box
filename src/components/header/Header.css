@@ -27,13 +27,13 @@
   font-weight: 650;
 }
 
-.header > a:nth-child(3) {
+.header > a:nth-child(2) {
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
   color: #fff !important;
   transition: 0.3s ease-in-out;
 }
 
-.header > a:nth-child(3):hover {
+.header > a:nth-child(2):hover {
   color: var(--color-red) !important;
 }

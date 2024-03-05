@@ -1,6 +1,7 @@
 .showcase {
   width: 100%;
   height: 100vh;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .showcase > .swiper {
@@ -11,4 +12,28 @@
 .showcase > .swiper .swiper-slide {
   width: 100%;
   height: 100vh;
+}
+
+.bullet-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.bullet-box > span:nth-child(2) {
+  color: var(--color-white);
+  opacity: 0.8;
+}
+
+.showcase > .swiper .swiper-pagination-bullet {
+  background-color: var(--color-white);
+  width: 25px;
+  height: 7px;
+  border-radius: 4px;
+  margin: 10px 0 !important;
+  margin-right: 15px !important;
+}
+.showcase > .swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-red);
 }

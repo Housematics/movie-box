@@ -21,6 +21,12 @@ const Showcase: React.FC = () => {
         direction={"vertical"}
         pagination={{
           clickable: true,
+          renderBullet: function (index, className) {
+            return `<div class="bullet-box">
+            <span class="${className}"></span>
+            <span>${index + 1}</span>
+            </div>`;
+          },
         }}
         modules={[Pagination]}
         loop={true}
