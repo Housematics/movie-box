@@ -1,0 +1,24 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 22rem;
+}
+
+.search-bar > input {
+  flex: 1;
+}
+
+.search-bar > i {
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 1rem;
+}
+
+.search-bar > i:hover {
+  cursor: pointer;
+  color: var(--color-rose);
+}

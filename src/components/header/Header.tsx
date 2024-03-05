@@ -1,7 +1,8 @@
 import React from "react";
-import "./Heder.css";
+import "./Header.css";
 import Logo from "@assets/tv.png";
 import { Link } from "react-router-dom";
+import Search from "@components/search/Search";
 
 const Header: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const Header: React.FC = () => {
         <h2>MovieBox</h2>
       </Link>
 
-      <input type="text" placeholder="What do you want to watch?" />
+      <Search />
 
-      <Link to="/auth/signin">Sign In</Link>
+      <Link to="/auth/signin">Sign in</Link>
     </header>
   );
 };

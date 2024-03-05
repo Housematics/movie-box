@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > a:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.header > a:first-child > img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.header > a:first-child > h2 {
+  color: #000;
+  font-size: var(--text-xl);
+  font-weight: 650;
+}
+
+.header > a:nth-child(3) {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: #000 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.header > a:nth-child(3):hover {
+  color: var(--color-red) !important;
+}
