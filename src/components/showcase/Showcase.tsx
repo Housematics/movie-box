@@ -11,6 +11,7 @@ const Showcase: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const { results } = await movieService.fetchTrendings();
+      console.log(results);
       setTrends(results);
     };
     fetchData();
