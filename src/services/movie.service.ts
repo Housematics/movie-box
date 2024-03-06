@@ -1,10 +1,10 @@
 import * as movieApi from "@api/movies.api";
-import type { ITrendsResp } from "@interfaces/movies.interface";
+import type { ITrendsResp, Trending } from "@interfaces/movies.interface";
 
 class MovieService {
-  async fetchTrendings(): Promise<ITrendsResp> {
+  async fetchTrendings(type: Trending): Promise<ITrendsResp> {
     try {
-      const { data } = await movieApi.fetchTrendings("all");
+      const { data } = await movieApi.fetchTrendings(type);
       return data;
     } catch (error: any) {
       throw new Error("cannot fetch trendings");
