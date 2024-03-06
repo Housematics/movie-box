@@ -1,1 +1,10 @@
+const env = import.meta.env;
+export const TMDB_API_BASE_URL = "https://api.themoviedb.org/3";
 export const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
+export const TMDB_ACCESS_TOKEN = env.VITE_TMDB_ACCESS_TOKEN;
+export const FIREBASE_API_KEY = `${env.VITE_FIREBASE_API_KEY}`;
+export const FIREBASE_AUTH_DOMAIN = `${env.VITE_FIREBASE_AUTH_DOMAIN}`;
+export const FIREBASE_PROJECT_ID = `${env.VITE_FIREBASE_PROJECT_ID}`;
+export const FIREBASE_STORAGE_BUCKET = `${env.VITE_FIREBASE_STORAGE_BUCKET}`;
+export const FIREBASE_MESSAGING_SENDER_ID = `${env.VITE_FIREBASE_MESSAGING_SENDER_ID}`;
+export const FIREBASE_APP_ID = `${env.VITE_FIREBASE_APP_ID}`;

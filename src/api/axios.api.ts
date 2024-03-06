@@ -1,11 +1,11 @@
 import axios, { AxiosInstance } from "axios";
 
-const access_token = import.meta.env.VITE_TMDB_ACCESS_TOKEN;
+import * as constants from "@constants/index";
 
 export const instance: AxiosInstance = axios.create({
-  baseURL: "https://api.themoviedb.org/3",
+  baseURL: constants.TMDB_API_BASE_URL,
   headers: {
-    Authorization: `Bearer ${access_token}`,
+    Authorization: `Bearer ${constants.TMDB_ACCESS_TOKEN}`,
   },
 });
 

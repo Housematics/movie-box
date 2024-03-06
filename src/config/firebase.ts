@@ -1,18 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-
-// import env data
-const env = import.meta.env;
+import * as constants from "@constants/index";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: `${env.VITE_FIREBASE_API_KEY}`,
-  authDomain: `${env.VITE_FIREBASE_AUTH_DOMAIN}`,
-  projectId: `${env.VITE_FIREBASE_PROJECT_ID}`,
-  storageBucket: `${env.VITE_FIREBASE_STORAGE_BUCKET}`,
-  messagingSenderId: `${env.VITE_FIREBASE_MESSAGING_SENDER_ID}`,
-  appId: `${env.VITE_FIREBASE_APP_ID}`,
+  apiKey: `${constants.FIREBASE_API_KEY}`,
+  authDomain: `${constants.FIREBASE_AUTH_DOMAIN}`,
+  projectId: `${constants.FIREBASE_PROJECT_ID}`,
+  storageBucket: `${constants.FIREBASE_STORAGE_BUCKET}`,
+  messagingSenderId: `${constants.FIREBASE_MESSAGING_SENDER_ID}`,
+  appId: `${constants.FIREBASE_APP_ID}`,
 };
 
 // Initialize Firebase
