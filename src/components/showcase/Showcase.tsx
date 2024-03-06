@@ -5,14 +5,14 @@ import { Pagination } from "swiper/modules";
 import movieService from "@/services/movie.service";
 import type { IMovie } from "@interfaces/movies.interface";
 import ShowcaseBox from "./ShowcaseBox";
+import { generateShowCases } from "@utils/functions.util";
 
 const Showcase: React.FC = () => {
   const [trends, setTrends] = React.useState<IMovie[]>([]);
   useEffect(() => {
     const fetchData = async () => {
       const { results } = await movieService.fetchTrendings();
-      console.log(results);
-      setTrends(results);
+      setTrends(generateShowCases(results));
     };
     fetchData();
   }, []);
