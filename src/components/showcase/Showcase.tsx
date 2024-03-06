@@ -11,7 +11,7 @@ const Showcase: React.FC = () => {
   const [trends, setTrends] = React.useState<IMovie[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      const { results } = await movieService.fetchTrendings();
+      const { results } = await movieService.fetchTrendings("all");
       setTrends(generateShowCases(results));
     };
     fetchData();
