@@ -20,6 +20,8 @@ export interface IMovie {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  first_air_date?: string;
+  origin_country?: string[];
 }
 
 export interface ITrendsResp {
