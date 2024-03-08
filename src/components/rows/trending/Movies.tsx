@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Movies.css";
 import movieService from "@services/movie.service";
-import { IMovie, Gender } from "@interfaces/movies.interface";
+import { IMovie, Trending } from "@interfaces/movies.interface";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MoviePoster from "@components/poster/MoviePoster";
 
 interface Props {
-  type: Gender;
+  type: Trending;
   title: string;
 }
 
