@@ -1,0 +1,35 @@
+.row-section > .row-section-movies {
+  width: 100%;
+  position: relative;
+}
+
+.row-section > .row-section-movies > .swiper {
+  position: unset;
+}
+
+.row-section > .row-section-movies .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.row-section > .row-section-movies .arrow > i {
+  cursor: pointer;
+  color: var(--color-dark-gray);
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.row-section > .row-section-movies .arrow > i:hover {
+  opacity: 0.8;
+}
+
+.row-section > .row-section-movies .arrow.arrow-left {
+  left: -2.5rem;
+}
+
+.row-section > .row-section-movies .arrow.arrow-right {
+  right: -2.5rem;
+}
