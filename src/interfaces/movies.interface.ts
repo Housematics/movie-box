@@ -24,7 +24,7 @@ export interface IMovie {
   origin_country?: string[];
 }
 
-export interface ITrendsResp {
+export interface IMoviesResp {
   page: number;
   results: IMovie[];
   total_pages: number;
