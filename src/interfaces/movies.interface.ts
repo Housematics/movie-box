@@ -30,3 +30,22 @@ export interface IMoviesResp {
   total_pages: number;
   total_results: number;
 }
+
+export interface ICelebrity {
+  adult: boolean;
+  gender: number;
+  id: number;
+  known_for_department: string;
+  name: string;
+  original_name: string;
+  popularity: number;
+  profile_path: string;
+  known_for: IMovie[];
+}
+
+export interface ICelebritiesResp {
+  page: number;
+  results: ICelebrity[];
+  total_pages: number;
+  total_results: number;
+}
