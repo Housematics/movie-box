@@ -10,7 +10,7 @@ interface Props {
 
 const CelebrityPoster: React.FC<Props> = ({ celebrity }) => {
   return (
-    <div className="movie-poster">
+    <div className="celebrity-poster">
       <Link to="/">
         <div className="poster-body">
           <img
