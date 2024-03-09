@@ -3,6 +3,7 @@ import type {
   IMoviesResp,
   Trending,
   Gender,
+  ICelebritiesResp,
 } from "@interfaces/movies.interface";
 
 class MovieService {
@@ -24,7 +25,7 @@ class MovieService {
     }
   }
 
-  async fetchCelebrities(page: number = 1) {
+  async fetchCelebrities(page: number = 1): Promise<ICelebritiesResp> {
     try {
       const { data } = await movieApi.fetchCelebrities(page);
       return data;
