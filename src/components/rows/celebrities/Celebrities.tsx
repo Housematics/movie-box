@@ -25,7 +25,7 @@ const Celebrities: React.FC<Props> = ({ title }) => {
     <section className="row-section">
       <div className="row-section-header">
         <h3>{title}</h3>
-        <Link to={``}>
+        <Link to={`/celebrities`}>
           See more <i className="fa-solid fa-angle-right"></i>
         </Link>
       </div>
