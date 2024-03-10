@@ -26,7 +26,7 @@ const Movies: React.FC<Props> = ({ type, title }) => {
     <section className="row-section">
       <div className="row-section-header">
         <h3>{title}</h3>
-        <Link to={``}>
+        <Link to={`/trending?type=${type}`}>
           See more <i className="fa-solid fa-angle-right"></i>
         </Link>
       </div>
