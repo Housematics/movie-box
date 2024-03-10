@@ -1,2 +1,44 @@
 .footer {
+  width: 100%;
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer > ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer > ul > li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer > ul:first-child > li > a {
+  color: var(--color-dark-gray);
+  font-size: var(--text-2xl);
+  transition: 0.3s ease-in-out;
+}
+
+.footer > ul:nth-child(2) > li > a {
+  color: var(--color-dark-gray);
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  transition: 0.3s ease-in-out;
+}
+
+.footer > ul:first-child > li > a:hover {
+  opacity: 0.85;
+}
+
+.footer > ul:nth-child(2) > li > a:hover {
+  opacity: 0.85;
+}
+
+.footer > p {
+  color: var(--color-dark-gray);
+  font-size: var(--text-sm);
 }
