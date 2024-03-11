@@ -1,6 +1,11 @@
+import { Gender } from "@/interfaces/movies.interface";
 import React from "react";
 
-const Movies = () => {
+interface Props {
+  type: Gender;
+}
+
+const Movies: React.FC = () => {
   return <div>Movies</div>;
 };
 
