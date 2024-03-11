@@ -12,7 +12,7 @@ export const fetchTrendings = async (type: Trending) =>
 export const fetchMovies = async (type: Gender, filter: string = "") =>
   axios.get(`/discover/${type}?${filter}`);
 
-export const fetchById = async (type: Gender, id: number) =>
+export const fetchMovieById = async (type: Gender, id: number) =>
   axios.get(`/${type}/${id}`);
 
 export const fetchTrailers = async (type: Gender, id: number) =>
