@@ -4,6 +4,7 @@ import type {
   Trending,
   Gender,
   ICelebritiesResp,
+  IMovie,
 } from "@interfaces/movies.interface";
 
 class MovieService {
@@ -31,6 +32,15 @@ class MovieService {
       return data;
     } catch (error: any) {
       throw new Error("cannot fetch celebrities");
+    }
+  }
+
+  async fetchMovie(id: number, type: Gender): Promise<IMovie> {
+    try {
+      const { data } = await movieApi.fetchMovieById(type, id);
+      return data;
+    } catch (error: any) {
+      throw new Error("cannot fetch movie");
     }
   }
 }
