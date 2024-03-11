@@ -2,6 +2,10 @@ export type Gender = "movie" | "tv";
 
 export type Trending = Gender | "all";
 
+interface Genres {
+  id: number;
+  name: string;
+}
 export interface IMovie {
   adult: boolean;
   backdrop_path: string;
@@ -22,6 +26,8 @@ export interface IMovie {
   vote_count: number;
   first_air_date?: string;
   origin_country?: string[];
+  genres?: Genres[];
+  budget?: number;
 }
 
 export interface IMoviesResp {
