@@ -10,10 +10,7 @@ interface Props {
 }
 
 const MoviePoster: React.FC<Props> = ({ movie }) => {
-  const onCLickHandler = () => {
-    console.log("hey");
-    console.log(movie.release_date);
-  };
+  const onCLickHandler = () => {};
   return (
     <div className="movie-poster">
       <div className="movie-poster-title">

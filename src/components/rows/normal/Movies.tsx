@@ -47,7 +47,7 @@ const Movies: React.FC<Props> = ({ type, title }) => {
         >
           {movies.map((movie, key) => (
             <SwiperSlide key={key}>
-              <MoviePoster movie={movie} />
+              <MoviePoster movie={{ ...movie, media_type: type }} />
             </SwiperSlide>
           ))}
 

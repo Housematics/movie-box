@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
         </li>
       </ul>
 
-      <p>© 2021 MovieBox by Adriana Eka Prayudha</p>
+      <p>© 2024 MovieBox by Eltaeif Houssem</p>
     </footer>
   );
 };
