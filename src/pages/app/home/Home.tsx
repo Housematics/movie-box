@@ -11,9 +11,9 @@ const Home: React.FC = () => {
     <Layout>
       <section className="home" id="home">
         <Showcase />
+        <TrendingMovies type="all" title="All Trendings" />
         <TrendingMovies type="tv" title="Popular Series" />
         <TrendingMovies type="movie" title="Popular Movies" />
-        <TrendingMovies type="all" title="All Trendings" />
         <AllMovies type="tv" title="All Series" />
         <AllMovies type="movie" title="All Movies" />
         <Celebrities title="Featured Casts" />
